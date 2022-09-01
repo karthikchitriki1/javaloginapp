@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '"mvn" -Dmaven.test.failure.ignore clean install'
+        sh "mvn clean install"
       }
     }
     stage('Deploy') {
